@@ -48,11 +48,24 @@ try {
 if (
   typeof post !== 'object' ||
   post === null ||
-  typeof post.url !== 'string' ||
-  !/^https:\/\/(www\.|mobile\.)?(x\.com|twitter\.com)\//.test(post.url)
+  typeof post.url !== 'string'
 ) {
   console.error('POST.json does not name an X post URL');
   process.exit(1);
 }
 
-console.log(`Entry post: ${post.url}`);
+// An X post address has the shape
+// https://x.com/<handle>/status/<digits> (twitter.com, and www. or
+// mobile. prefixes, read the same). The house reads the post from X,
+// so a URL that is not shaped like one would be refused at the gate;
+// reject it here instead of passing a bad address on.
+const postMatch =
+  /^https:\/\/(www\.|mobile\.)?(x\.com|twitter\.com)\/[^/]+\/status\/(\d+)/.exec(
+    post.url,
+  );
+if (postMatch === null) {
+  console.error('POST.json does not name an X post URL');
+  process.exit(1);
+}
+
+console.log(`Entry post: ${post.url} (status ${postMatch[3]})`);
