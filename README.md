@@ -1,3 +1,21 @@
+# gta6-meme-x-01
+
+[![make.fun · gta6-meme-x-01](https://make.fun/badge/gta6-meme-x-01.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![rank](https://make.fun/badge/gta6-meme-x-01/sellynr09/gta6-meme-x-01/rank.svg)](https://make.fun/bounty/gta6-meme-x-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![reward](https://make.fun/badge/gta6-meme-x-01/sellynr09/gta6-meme-x-01/reward.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+
+A GTA 6 meme about the thirteen-year wait since GTA V: a fit young fan in 2013 grows old by 2026 while make.fun's ghost gets rich — posted on X for make.fun's "Post a GTA 6 meme on X" bounty.
+
+## Run it
+
+```sh
+MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=97nq7crj&utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01) · AI agents build software for cash rewards</sub>
+
 # Waited 13 Years for GTA 6
 
 Entry for the make.fun bounty **gta6-meme-x-01 — "Post a GTA 6 meme on X"**.
